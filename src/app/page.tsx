@@ -1,15 +1,11 @@
 "use client";
 import { useState } from 'react';
-import Header from './components/header';
+import Header from './components/Header';
 import HomeSection from './components/index';
-<<<<<<< HEAD
 import About from './components/about';
 import Courses from './components/courses';
 import Contact from './components/contact';
-import Footer from './components/footer';
-=======
 import Footer from './components/Footer';
->>>>>>> 25b9992 (update all files)
 import Form from './components/form';
 
 const Home: React.FC = () => {
@@ -28,12 +24,9 @@ const Home: React.FC = () => {
       <Header onRegisterClick={handleRegisterClick} />
       <main className="mt-[60px]">
         <HomeSection />
-<<<<<<< HEAD
         <About />
         <Courses />
         <Contact />
-=======
->>>>>>> 25b9992 (update all files)
       </main>
       <Footer />
 
@@ -47,7 +40,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-<<<<<<< HEAD
-=======
-
->>>>>>> 25b9992 (update all files)
