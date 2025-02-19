@@ -2,10 +2,6 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import HomeSection from './components/index';
-import About from './components/about';
-import Courses from './components/courses';
-import Contact from './components/contact';
-import Footer from './components/Footer';
 import Form from './components/form';
 
 const Home: React.FC = () => {
@@ -24,12 +20,7 @@ const Home: React.FC = () => {
       <Header onRegisterClick={handleRegisterClick} />
       <main className="mt-[60px]">
         <HomeSection />
-        <About />
-        <Courses />
-        <Contact />
-      </main>
-      <Footer />
-
+        </main>
       {isFormVisible && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <Form isVisible={isFormVisible} onClose={handleCloseForm} />
